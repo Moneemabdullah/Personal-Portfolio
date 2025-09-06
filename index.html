@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home - My Website</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="navbar">
+      <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="#top" class="logo">Moneem</a>
+        <ul class="nav-links">
+          <i class="uil uil-times navCloseBtn"></i>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="download-cv">
+          <a
+            href="https://drive.google.com/file/d/1_zjoM6-_y-dptHQusjEXQNXJYEgX5SfS/view?usp=sharing"
+            target="_blank"
+            class="cv-btn"
+          >
+            <i class="icon-download fa-solid fa-download"></i> Download CV
+          </a>
+        </div>
+      </nav>
+    </header>
+    <section class="hero" id="top">
+      <div class="hero-container">
+        <section class="hero-text">
+          <h2>About Me</h2>
+          <p>
+            Hello! My name is Abdullah al Moneem. I am a beginner in web
+            development and this is my first website project using only HTML and
+            CSS. I’m excited to learn and grow my skills!
+          </p>
+        </section>
+        <section class="hero-image">
+          <img src="./images/moneem1.jpg" alt="My photo" />
+        </section>
+      </div>
+    </section>
+    <hr />
+    <section class="skills" id="skills">
+      <section class="skills">
+        <div class="skills-header">
+          <h1>My Skills</h1>
+        </div>
+
+        <div class="skills-container">
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="icon">
+                <img src="./images/html.png" alt="HTML Icon" />
+              </div>
+              <h3>HTML</h3>
+            </div>
+            <p>I can structure basic web pages using HTML tags.</p>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="icon">
+                <img
+                  src="./images/problem-solving-icon.png"
+                  alt="Problem Solving Icon"
+                />
+              </div>
+              <h3>Problem Solving</h3>
+            </div>
+            <p>I enjoy solving logical and coding problems.</p>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="icon">
+                <img src="./images/teamwork-icon.png" alt="Teamwork Icon" />
+              </div>
+              <h3>Teamwork</h3>
+            </div>
+            <p>I can collaborate with classmates effectively.</p>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-title">
+              <div class="icon">
+                <img
+                  src="https://www.clipartmax.com/png/small/352-3529491_quotation-clipart-communication-icon-chat-icon-black.png"
+                  alt="Communication Icon"
+                />
+              </div>
+              <h3>Communication</h3>
+            </div>
+            <p>I am good at explaining ideas clearly.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <hr />
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="text-center">
+          <h1>Contact Me</h1>
+          <p class="text-muted">
+            Feel free to reach out to me using the form below.
+          </p>
+        </div>
+
+        <div class="content">
+          <div class="right-side full-form">
+            <form
+              id="contact_form"
+              name="contact_form"
+              action="https://formsubmit.co/moneemabdullha2000@gmail.com"
+              method="POST"
+              novalidate
+            >
+              <div class="form-grid">
+                <div class="input-box">
+                  <label for="first_name">First Name</label>
+                  <input
+                    type="text"
+                    id="first_name"
+                    name="first_name"
+                    placeholder="Enter your first name"
+                    required
+                    maxlength="50"
+                  />
+                </div>
+                <div class="input-box">
+                  <label for="email_addr">Email Address</label>
+                  <input
+                    type="email"
+                    id="email_addr"
+                    name="email"
+                    placeholder="name@example.com"
+                    required
+                    maxlength="50"
+                  />
+                </div>
+              </div>
+
+              <div class="form-grid">
+                <div class="input-box">
+                  <label for="subject">Subject</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Subject of your message"
+                    required
+                    maxlength="50"
+                  />
+                </div>
+                <div class="input-box">
+                  <label for="phone_input">Phone</label>
+                  <input
+                    type="tel"
+                    id="phone_input"
+                    name="phone"
+                    placeholder="Your phone number"
+                    required
+                    maxlength="50"
+                  />
+                </div>
+              </div>
+
+              <div class="input-box message-box">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="button">
+                <input type="submit" value="Send Message" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Footer -->
+    <section class="social-media-section">
+      <div class="social-media-container">
+        <h5 class="social-title">Social Media</h5>
+        <div class="social-icons">
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/moneem-all-abdullah-4b07a9288/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <!-- Instagram -->
+          <a
+            href="https://www.instagram.com/moneem.abdullah/"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <!-- Facebook -->
+          <a
+            href="https://www.facebook.com/moneemall.abdullah/"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <!-- GitHub -->
+          <a
+            href="https://github.com/Moneemabdullah"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>&copy; 2025 | Abdullah Al Moneem</p>
+      </div>
+    </footer>
+  </body>
+</html>
